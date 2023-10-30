@@ -7,6 +7,7 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<!-- 스프링 컨테이너 내에 디자인한 객체 클래스를 등록 -->
 	<!-- Setter 메서드를 통해 필드값 초기화 -->
+	
 	<bean id="hotel1" class="core.chap2.Hotel">
 		<property name="headChef" ref="asianChef" />	
 		<property name="restaurant" ref="asianRes" />	
@@ -21,6 +22,7 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
 	<!-- 생성자를 통해 필드값 초기화 -->
+	
 	<bean id="hotel2" class="core.chap2.Hotel">
 		<constructor-arg ref="western"/>
 		<constructor-arg ref="frenchChef"/>
